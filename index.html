@@ -1,55 +1,77 @@
+<!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
-        rel="stylesheet">
-    <title>Guiminamflix</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>HISTÓRIA DO FUT</title>
 </head>
-
 <body>
-    <header>GUIMINAMFLIX</header>
-
-    <section class="chamada">
-        <div class="chamada-texto">
-            <h1>HISTÓRIA DO FUT</h1>
-            <p>#TesouroMagico #Kutney</p>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="img/cenario-passo0-kutney.png" alt="Kutney sonhando com futebol">
+            <p>Kutney, um jovem com um sonho gigante: ser o melhor jogador de futebol do mundo! Ele sabia que talento era importante, mas ouviu lendas sobre um "Tesouro Mágico do Fut" capaz de elevar qualquer jogador a um nível celestial. A aventura para encontrá-lo começa agora!</p>
+            <button class="btn-proximo" data-proximo="1">Buscar o mapa na antiga biblioteca do avô</button>
+            <button class="btn-proximo" data-proximo="2">Treinar incansavelmente no campo local</button>
         </div>
-
-        <div>
-            <!-- Aqui você pode colocar um vídeo de introdução sobre a aventura do Kutney, talvez um trailer fictício! -->
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/SEd86w5R9-U?si=1fVn5A1_nQ21K_kM"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="passo" id="passo-1">
+            <img src="img/cenario-passo1-mapa.png" alt="Kutney encontrando um mapa antigo">
+            <p>Na biblioteca empoeirada do seu avô, um ex-jogador lendário, Kutney encontra um mapa antigo! Ele revela caminhos secretos e enigmas que levam ao lendário Tesouro Mágico do Fut.</p>
+            <button class="btn-proximo" data-proximo="3">Seguir as pistas do mapa</button>
+            <button class="btn-proximo" data-proximo="4">Pedir ajuda ao avô</button>
         </div>
-    </section>
-
-    <section class="categoria">
-        <h2>A Jornada de Kutney</h2>
-        <div class="categoria-videos">
-            <!-- Imagine que cada link leva para um episódio ou cena da aventura do Kutney -->
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"> <!-- Link fictício para o Início da Aventura -->
-                <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" alt="Kutney descobre o mapa do tesouro mágico" />
-            </a>
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"> <!-- Link fictício para o Primeiro Desafio -->
-                <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" alt="Kutney enfrenta o guardião do campo lendário" />
-            </a>
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"> <!-- Link fictício para o Encontro com Aliados -->
-                <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" alt="Kutney encontra seus companheiros de equipe" />
-            </a>
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"> <!-- Link fictício para o Treinamento Especial -->
-                <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" alt="Kutney treina com a bola de energia" />
-            </a>
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"> <!-- Link fictício para a Grande Final -->
-                <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" alt="Kutney na partida decisiva pelo tesouro" />
-            </a>
+        <div class="passo" id="passo-2">
+            <img src="img/cenario-passo2-treino.png" alt="Kutney treinando muito">
+            <p>Kutney treina com toda a força, aprimorando seus dribles e chutes. Ele sente que está melhorando, mas a verdadeira magia do futebol pode estar em outro lugar.</p>
+            <button class="btn-proximo" data-proximo="5">Voltar a procurar pistas sobre o Tesouro Mágico</button>
+            <button class="btn-proximo" data-proximo="6">Continuar o treino intensivo</button>
         </div>
-    </section>
-
-</body>
-
-</html>
+        <div class="passo" id="passo-3">
+            <img src="img/cenario-passo3-floresta.png" alt="Kutney na floresta mística">
+            <p>O mapa leva Kutney a uma floresta mística, onde cada árvore parece um zagueiro e o vento assobia como um apito. Ele encontra uma inscrição: "Para avançar, mostre sua agilidade!".</p>
+            <button class="btn-proximo" data-proximo="7">Realizar um drible espetacular</button>
+            <button class="btn-proximo" data-proximo="8">Tentar forçar a passagem</button>
+        </div>
+        <div class="passo" id="passo-4">
+            <img src="img/cenario-passo4-avô.png" alt="Kutney conversando com o avô">
+            <p>O avô de Kutney, com um sorriso sábio, explica que o verdadeiro Tesouro Mágico do Fut não é um objeto, mas a união de talento, trabalho em equipe e paixão pelo esporte. Ele entrega a Kutney um amuleto que amplifica o espírito de equipe.</p>
+            <button class="btn-proximo" data-proximo="9">Agradecer e seguir com o amuleto</button>
+        </div>
+        <div class="passo" id="passo-5">
+            <img src="img/cenario-passo5-mapa-novamente.png" alt="Kutney revisando o mapa">
+            <p>Decide que o treino sozinho não basta. Kutney volta a estudar o mapa, percebendo que a jornada exige mais do que habilidade individual.</p>
+            <button class="btn-proximo" data-proximo="3">Seguir as pistas do mapa</button>
+        </div>
+        <div class="passo" id="passo-6">
+            <img src="img/cenario-passo6-desistir.png" alt="Kutney desanimado">
+            <p>Kutney treina tanto que se esgota, mas a magia do futebol ainda parece distante. Ele percebe que talvez precise de outra abordagem.</p>
+            <button class="btn-proximo" data-proximo="5">Voltar a procurar pistas sobre o Tesouro Mágico</button>
+        </div>
+        <div class="passo" id="passo-7">
+            <img src="img/cenario-passo7-aliados.png" alt="Kutney encontrando aliados">
+            <p>Ao demonstrar agilidade, Kutney atrai a atenção de outros jovens apaixonados por futebol com habilidades únicas: uma goleira com reflexos de raio e um meio-campista com visão de jogo incrível. Eles se unem a Kutney!</p>
+            <button class="btn-proximo" data-proximo="10">Continuar a jornada com os novos amigos</button>
+        </div>
+        <div class="passo" id="passo-8">
+            <img src="img/cenario-passo8-beco-sem-saida.png" alt="Kutney em um beco sem saída">
+            <p>Tentar forçar a passagem não funciona. Kutney se vê em um beco sem saída e percebe que a força bruta não é o caminho.</p>
+            <button class="btn-proximo" data-proximo="7">Tentar demonstrar agilidade de outra forma</button>
+        </div>
+        <div class="passo" id="passo-9">
+            <img src="img/cenario-passo9-amuleto-equipe.png" alt="Kutney com um amuleto de equipe">
+            <p>Com o amuleto do avô e a sabedoria sobre trabalho em equipe, Kutney se sente mais forte e preparado. Ele agora entende que a verdadeira magia está na união.</p>
+            <button class="btn-proximo" data-proximo="11">Buscar os outros jogadores lendários</button>
+        </div>
+        <div class="passo" id="passo-10">
+            <img src="img/cenario-passo10-montanha.png" alt="Kutney e amigos escalando uma montanha">
+            <p>Juntos, Kutney e seus amigos enfrentam desafios ainda maiores, como escalar montanhas onde o vento assobia como apito de árbitro. Eles aprendem a confiar uns nos outros.</p>
+            <button class="btn-proximo" data-proximo="12">Chegar ao campo sagrado</button>
+        </div>
+        <div class="passo" id="passo-11">
+            <img src="img/cenario-passo11-jogadores-lendarios.png" alt="Kutney encontrando jogadores lendários">
+            <p>O mapa os leva a um local onde encontraram os "jogadores lendários", que testam suas habilidades em partidas desafiadoras. Kutney e sua equipe mostram que a união é mais forte que qualquer talento individual.</p>
+            <button class="btn-proximo" data-proximo="12">Chegar ao campo sagrado</button>
+        </div>
